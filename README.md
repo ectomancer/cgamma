@@ -1,4 +1,5 @@
 # cgamma
+real gamma function.
 m_tgamma ported from C, refactored to complex gamma function with no complex logic and no bounds checking for imaginary part.
  Some error codes not ported.<br>
  assert statements not implemented.<br>
