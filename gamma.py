@@ -4,7 +4,7 @@ import math
 e = 2.718281828459045
 # π = math.pi
 π = 3.141592653589793
-EMPTY_PRODUCT = 1
+EMPTY_SUM = 0
 NGAMMA_INTEGRAL = 23
 LANCZOS_N = 13
 NGAMMA_INTEGRAL = 23
@@ -88,7 +88,7 @@ def sinpi(x: float) -> float:
 
 def lanczos_sum(z: complex) -> complex:
     """Lanczos's sum, L_g(x), for positive."""
-    num, den = EMPTY_PRODUCT, EMPTY_PRODUCT
+    num, den = EMPTY_SUM, EMPTY_SUM
     """Evaluate the rational function lanczos_sum(x).  For large
        x, the obvious algorithm risks overflow, so we instead
        rescale the denominator and numerator of the rational
